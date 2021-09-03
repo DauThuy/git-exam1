@@ -1,0 +1,125 @@
+body {
+    background-color: #ffffee;
+}
+
+#todo {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #cfd8dc;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.todo-header {
+    height: 80px;
+    color: #fff;
+    background-color: #3f94d6;
+    border-radius: 30px 30px 0 0;
+
+}
+
+.todo-header h2 {
+    margin: 0;
+    text-align: center;
+    line-height: 80px;
+    font-family: Arial;
+    font-size: 32px;
+}
+
+.add-block {
+    height: 50px;
+    border-top: 1px solid #cfd8dc;
+    border-bottom: 1px solid #cfb8dc;
+}
+
+.add-block .add-field {
+    width: 80%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    float: left;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.add-block .add-button {
+    width: 20%;
+    height: 100%;
+    border: 0;
+    color: #3f94d6;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #bbdefb;
+}
+
+.add-block .add-button:hover {
+    background-color: #90caf9;
+    cursor: pointer;
+}
+
+ul.tasks {
+    margin: 0;
+    padding: 0;
+}
+
+li.task {
+    list-style: none;
+    height: 50px;
+    border: 1px solid #cfd8dc;
+}
+
+li.task:last-child {
+    border-radius: 0 0 30px 30px;
+}
+
+li.task:last-child .col-1 {
+    border-radius: 0 0 0px 30px;
+}
+
+li.task:last-child .col-3 {
+    border-radius: 0 0 30px 0;
+}
+
+li.task .col-1 {
+    width: 10%;
+    height: 100%;
+    float: left;
+    background-color: #bbdefb;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li.task .col-2 {
+    width: 70%;
+    height: 100%;
+    line-height: 50px;
+    float: left;
+    font-family: Arial;
+    background-color: #fff;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+li.task .col-3 {
+    width: 20%;
+    height: 100%;
+    float: left;
+    background-color: #bbdefb;
+    background-image: url(images/trash.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+li.task .col-3:hover {
+    background-color: #90caf9;
+    cursor: pointer;
+}
+
+.checked {
+    text-decoration: line-through;
+}

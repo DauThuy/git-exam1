@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div id="todo">
+        <div class="todo-header">
+            <h2>Todo List</h2>
+        </div>
+
+        <div class="todo-body">
+            <div class="add-block">
+                <input class="add-field" type="text" placeholder="A task you want to complete">
+                <button class="add-button">+</button>
+            </div>
+
+            <ul id="tasks-sortable" class="tasks">
+                <li class="task">
+                    <div class="task-cbx col-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-text col-2">Task1</div>
+                    <div class="task-remove col-3"></div>
+                </li>
+
+                <li class="task">
+                    <div class="task-cbx col-1">
+                        <input type="checkbox">
+                    </div>
+                    <div class="task-text col-2">Task1</div>
+                    <div class="task-remove col-3"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
